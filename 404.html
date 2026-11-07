@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>VEX IQ CCA</title>
+  <script>
+    /* GitHub Pages serves this file for any unknown path, e.g. /<repo>/<slug>.
+       Work out the site base so assets and data load from the right place. */
+    (function () {
+      var segs = location.pathname.split('/').filter(Boolean);
+      var base = '/';
+      if (segs.length > 1) base = '/' + segs[0] + '/';
+      var slug = segs.length ? segs[segs.length - 1] : '';
+      var q = new URLSearchParams(location.search).get('b');
+      if (q) { slug = q; base = location.pathname.replace(/[^/]*$/, ''); }
+      window.CCA_BASE = base;
+      window.CCA_SLUG = decodeURIComponent(slug || '').toLowerCase().replace(/\.html$/, '');
+      document.write('<base href="' + base.replace(/"/g, '') + '">');
+    })();
+  </script>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23d6213a'/%3E%3Ctext x='16' y='21' font-family='Arial' font-weight='900' font-size='12' fill='white' text-anchor='middle'%3EIQ%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="./"><span class="brand-mark">IQ</span> VEX IQ CCA</a>
+    </div>
+  </header>
+
+  <main class="wrap" id="app">
+    <div class="empty"><span class="spinner"></span></div>
+  </main>
+
+  <script src="assets/common.js"></script>
+  <script src="assets/board.js"></script>
+</body>
+</html>
