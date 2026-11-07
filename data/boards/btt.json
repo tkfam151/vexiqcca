@@ -15,20 +15,24 @@
   "matches": [
     {
       "id": "m76wtu15",
-      "time": "",
+      "time": "2026-11-07T15:46",
       "players": [
         "TonklaClaude"
       ],
-      "scores": {}
+      "scores": {
+        "cqfpskp0": 69646504
+      }
     },
     {
       "id": "mjg60yod",
-      "time": "2026-11-07T15:34",
+      "time": "2026-11-07T15:50",
       "players": [
         "Sir Froggington"
       ],
-      "scores": {}
+      "scores": {
+        "cqfpskp0": 10741155356
+      }
     }
   ],
-  "updated": "2026-11-07T08:34:44.069Z"
+  "updated": "2026-11-07T08:47:38.729Z"
 }
