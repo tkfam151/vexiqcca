@@ -1,0 +1,89 @@
+{
+  "slug": "jpc",
+  "title": "Jurassic Park Challenge",
+  "description": "",
+  "bestPerTeam": false,
+  "criteria": [
+    {
+      "id": "c3y4etbh",
+      "name": "Dinosaurs",
+      "type": "number",
+      "order": "desc",
+      "unit": ""
+    },
+    {
+      "id": "ccemiozq",
+      "name": "Time",
+      "type": "time",
+      "order": "asc",
+      "unit": ""
+    }
+  ],
+  "matches": [
+    {
+      "id": "mbz4whqn",
+      "time": "2026-11-18T15:10",
+      "players": [
+        "1"
+      ],
+      "scores": {}
+    },
+    {
+      "id": "m88o6uc7",
+      "time": "2026-11-18T15:15",
+      "players": [
+        "2"
+      ],
+      "scores": {}
+    },
+    {
+      "id": "mgnv4qdb",
+      "time": "2026-11-18T15:20",
+      "players": [
+        "3"
+      ],
+      "scores": {}
+    },
+    {
+      "id": "m9t9yftl",
+      "time": "2026-11-18T15:25",
+      "players": [
+        "4"
+      ],
+      "scores": {}
+    },
+    {
+      "id": "m9wgw0zl",
+      "time": "2026-11-18T15:30",
+      "players": [
+        "5"
+      ],
+      "scores": {}
+    },
+    {
+      "id": "m9cb55ok",
+      "time": "2026-11-18T15:35",
+      "players": [
+        "6"
+      ],
+      "scores": {}
+    },
+    {
+      "id": "m4x5xdbh",
+      "time": "2026-11-18T15:40",
+      "players": [
+        "7"
+      ],
+      "scores": {}
+    },
+    {
+      "id": "mtt1fw7n",
+      "time": "2026-11-18T15:45",
+      "players": [
+        "8"
+      ],
+      "scores": {}
+    }
+  ],
+  "updated": "2026-11-07T07:13:42.155Z"
+}
