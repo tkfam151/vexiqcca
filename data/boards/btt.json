@@ -6,7 +6,7 @@
   "criteria": [
     {
       "id": "cqfpskp0",
-      "name": "Money - Money",
+      "name": "Money",
       "type": "number",
       "order": "desc",
       "unit": "$"
@@ -17,11 +17,18 @@
       "id": "m76wtu15",
       "time": "",
       "players": [
-        "TonklaClaude",
+        "TonklaClaude"
+      ],
+      "scores": {}
+    },
+    {
+      "id": "mjg60yod",
+      "time": "",
+      "players": [
         "Sir Froggington"
       ],
       "scores": {}
     }
   ],
-  "updated": "2026-11-07T08:30:32.667Z"
+  "updated": "2026-11-07T08:31:59.812Z"
 }
