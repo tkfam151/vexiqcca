@@ -6,10 +6,17 @@
   "criteria": [
     {
       "id": "cqfpskp0",
-      "name": "Money",
+      "name": "Game 1",
       "type": "number",
       "order": "desc",
       "unit": "$"
+    },
+    {
+      "id": "cguy7a04",
+      "name": "Game 2",
+      "type": "number",
+      "order": "desc",
+      "unit": ""
     }
   ],
   "matches": [
@@ -34,5 +41,5 @@
       }
     }
   ],
-  "updated": "2026-11-07T08:48:15.866Z"
+  "updated": "2026-11-07T08:49:09.629Z"
 }
