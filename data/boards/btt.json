@@ -1,0 +1,27 @@
+{
+  "slug": "btt",
+  "title": "Blooket TT",
+  "description": "",
+  "bestPerTeam": false,
+  "criteria": [
+    {
+      "id": "cqfpskp0",
+      "name": "Money - Money",
+      "type": "number",
+      "order": "desc",
+      "unit": "$"
+    }
+  ],
+  "matches": [
+    {
+      "id": "m76wtu15",
+      "time": "",
+      "players": [
+        "TonklaClaude",
+        "Sir Froggington"
+      ],
+      "scores": {}
+    }
+  ],
+  "updated": "2026-11-07T08:30:32.667Z"
+}
