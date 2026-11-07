@@ -71,7 +71,13 @@
     if (res.status === 404) return null;
     const data = res.status === 204 ? null : await res.json().catch(() => null);
     if (!res.ok) {
-      const err = new Error((data && data.message) || ('GitHub error ' + res.status));
+      let msg = (data && data.message) || ('GitHub error ' + res.status);
+      if (res.status === 403 && /not accessible/i.test(msg)) {
+        msg = 'Your token is not allowed to write to ' + cfg.owner + '/' + cfg.repo + '. On GitHub, edit the token: ' +
+          'under "Repository access" choose "Only select repositories" and pick ' + cfg.repo +
+          ', then under "Repository permissions" set "Contents" to "Read and write". Save the token and try again.';
+      }
+      const err = new Error(msg);
       err.status = res.status;
       throw err;
     }
@@ -156,7 +162,7 @@
           <summary><strong>How do I get a token?</strong></summary>
           <ol class="steps">
             <li>On GitHub open <em>Settings → Developer settings → Personal access tokens → Fine-grained tokens</em> and click <em>Generate new token</em>.</li>
-            <li>Under <em>Repository access</em> choose <em>Only select repositories</em> and pick this site's repository.</li>
+            <li>Under <em>Repository access</em> choose <em>Only select repositories</em> and pick this site's repository. (<em>Public repositories</em> is read-only and will not work.)</li>
             <li>Under <em>Repository permissions</em> set <em>Contents</em> to <em>Read and write</em>.</li>
             <li>Generate it, copy it and paste it above. Keep it secret – anyone with it can edit your leaderboards.</li>
           </ol>
@@ -625,6 +631,7 @@
       busy(btn, false);
       if (err.status === 409) toast('Someone else changed this leaderboard. Reload it and try again.', true);
       else if (err.status === 401) toast('Your token is no longer valid – sign in again.', true);
+      else if (err.status === 403) alert('Save failed.\n\n' + err.message);
       else toast('Save failed: ' + err.message, true);
     }
   }
@@ -640,7 +647,8 @@
       viewList();
     } catch (err) {
       busy(btn, false);
-      toast('Delete failed: ' + err.message, true);
+      if (err.status === 403) alert('Delete failed.\n\n' + err.message);
+      else toast('Delete failed: ' + err.message, true);
     }
   }
 
