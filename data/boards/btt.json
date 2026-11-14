@@ -27,7 +27,8 @@
         "TonklaClaude"
       ],
       "scores": {
-        "cqfpskp0": 69646504
+        "cqfpskp0": 69646504,
+        "cguy7a04": 61674
       }
     },
     {
@@ -37,29 +38,10 @@
         "Sir Froggington"
       ],
       "scores": {
-        "cqfpskp0": 10741155356
-      }
-    },
-    {
-      "id": "mtx627j3",
-      "time": "2026-11-07T15:55",
-      "players": [
-        "Tonklatimmyensi"
-      ],
-      "scores": {
-        "cqfpskp0": 61674
-      }
-    },
-    {
-      "id": "mxtopucz",
-      "time": "2026-11-07T16:00",
-      "players": [
-        "Sir Froggy"
-      ],
-      "scores": {
-        "cqfpskp0": 9918
+        "cqfpskp0": 10741155356,
+        "cguy7a04": 9918
       }
     }
   ],
-  "updated": "2026-11-14T10:02:21.497Z"
+  "updated": "2026-11-14T10:02:41.535Z"
 }
