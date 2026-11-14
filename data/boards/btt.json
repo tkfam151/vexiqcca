@@ -39,7 +39,27 @@
       "scores": {
         "cqfpskp0": 10741155356
       }
+    },
+    {
+      "id": "mtx627j3",
+      "time": "2026-11-07T15:55",
+      "players": [
+        "Tonklatimmyensi"
+      ],
+      "scores": {
+        "cqfpskp0": 61674
+      }
+    },
+    {
+      "id": "mxtopucz",
+      "time": "2026-11-07T16:00",
+      "players": [
+        "Sir Froggy"
+      ],
+      "scores": {
+        "cqfpskp0": 9918
+      }
     }
   ],
-  "updated": "2026-11-07T08:49:09.629Z"
+  "updated": "2026-11-14T10:02:21.497Z"
 }
